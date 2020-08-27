@@ -19,7 +19,4 @@ app.use(bodyParser.json())
 require('./src/app/controllers/customer.controller')(app)
 require('./src/app/controllers/account.controller')(app)
 
-//app.get('/hello', (req, res) => res.send('hello world!'))
-
-
 app.listen(process.env.PORT|| 3000)
