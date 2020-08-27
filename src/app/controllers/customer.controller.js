@@ -1,5 +1,6 @@
 const customerService = require('../services/customer.service');
 module.exports = function(app) {
+    //basic info is id, first and last name and email
     app.get('/api/customers-basic', (req,res) => {
         res.json(customerService.findAllCustomersBasicInfo())
     });
